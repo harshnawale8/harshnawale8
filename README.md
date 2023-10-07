@@ -15,4 +15,4 @@ Materials Used
 
 3. Github : All my code solutions and progress are documented in this Github repository.
 
-4.Linkedin : You can find a detailed post about my experience on my Linkedin profile.
+4. Linkedin : You can find a detailed post about my experience on my Linkedin profile.
