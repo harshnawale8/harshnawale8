@@ -5,7 +5,6 @@ int main() {
    printf("Enter two numbers(intervals): ");
    scanf("%d %d", &low, &high);
 
-   // swap numbers if low is greather than high
    if (low > high) {
       temp = low;
       low = high;
@@ -16,7 +15,6 @@ int main() {
    while (low < high) {
       flag = 0;
 
-      // ignore numbers less than 2
       if (low <= 1) {
          ++low;
          continue;
