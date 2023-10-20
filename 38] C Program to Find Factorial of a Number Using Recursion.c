@@ -1,6 +1,7 @@
 #include<stdio.h>
 long int multiplyNumbers(int n);
-int main() {
+int main()
+{
     int n;
     printf("Enter a positive integer: ");
     scanf("%d",&n);
