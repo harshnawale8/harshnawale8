@@ -1,5 +1,5 @@
-#include <math.h>
-#include <stdio.h>
+#include<math.h>
+#include<stdio.h>
 long long convert(int oct);
 int main() {
     int oct;
@@ -13,7 +13,6 @@ long long convert(int oct) {
     int dec = 0, i = 0;
     long long bin = 0;
 
-    // converting octal to decimal
     while (oct != 0) {
         dec += (oct % 10) * pow(8, i);
         ++i;
@@ -21,7 +20,6 @@ long long convert(int oct) {
     }
     i = 1;
 
-   // converting decimal to binary
     while (dec != 0) {
         bin += (dec % 2) * i;
         dec /= 2;
