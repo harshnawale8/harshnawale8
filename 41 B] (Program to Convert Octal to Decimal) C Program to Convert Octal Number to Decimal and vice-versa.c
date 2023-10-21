@@ -1,7 +1,6 @@
-#include <stdio.h>
-#include <math.h>
+#include<stdio.h>
+#include<math.h>
 
-// function prototype
 long long convertOctalToDecimal(int octalNumber);
 
 int main() {
@@ -16,7 +15,6 @@ int main() {
     return 0;
 }
 
-// function to convert octalNumber to decimal
 long long convertOctalToDecimal(int octalNumber) {
     int decimalNumber = 0, i = 0;
 
