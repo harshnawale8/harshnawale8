@@ -1,7 +1,6 @@
-#include <stdio.h>
-#include <math.h>
+#include<stdio.h>
+#include<math.h>
 
-// function prototypes
 int checkOctal(int);
 long long convertOctalToDecimal(int);
 
@@ -9,14 +8,11 @@ int main() {
     
     int octalNumber;
     int condition;
-
-    // repeat loop as long as user
-    // gives a non-octal number     
+  
     do {
         printf("Enter an octal number: ");
         scanf("%d", &octalNumber);
 
-        // check if number is octal
         condition = checkOctal(octalNumber);
         
         if (!condition) {
@@ -29,27 +25,22 @@ int main() {
     return 0;
 }
 
-// function to check octal number
 int checkOctal(int octalNumber) {
     int remainder;
-    
-    // check each digit of input number
+
     while(octalNumber != 0) {
         remainder = octalNumber % 10;
 
-        // return 0 if a digit is 8 or 9
         if (remainder >= 8) {
             return 0;
         }
         
         octalNumber/= 10;
     }
-    
-    // return 1 if number is octal
+
     return 1;
 }
 
-// function to convert octalNumber to decimal
 long long convertOctalToDecimal(int octalNumber) {
     int decimalNumber = 0, i = 0;
 
