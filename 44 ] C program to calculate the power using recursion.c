@@ -1,4 +1,4 @@
-#include <stdio.h>
+#include<stdio.h>
 int power(int n1, int n2);
 int main() {
     int base, a, result;
