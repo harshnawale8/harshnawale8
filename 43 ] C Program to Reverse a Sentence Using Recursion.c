@@ -1,4 +1,4 @@
-#include <stdio.h>
+#include<stdio.h>
 void reverseSentence();
 int main() {
     printf("Enter a sentence: ");
