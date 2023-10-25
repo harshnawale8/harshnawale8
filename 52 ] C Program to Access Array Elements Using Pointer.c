@@ -1,5 +1,6 @@
-#include <stdio.h>
-int main() {
+#include<stdio.h>
+int main() 
+{
     int data[5];
 
     printf("Enter elements: ");
