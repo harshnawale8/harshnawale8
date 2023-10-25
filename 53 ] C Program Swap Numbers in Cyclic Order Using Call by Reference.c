@@ -1,4 +1,4 @@
-#include <stdio.h>
+#include<stdio.h>
 void cyclicSwap(int *a, int *b, int *c);
 int main() {
     int a, b, c;
@@ -19,7 +19,6 @@ int main() {
 
 void cyclicSwap(int *n1, int *n2, int *n3) {
     int temp;
-    // swapping in cyclic order
     temp = *n2;
     *n2 = *n1;
     *n1 = *n3;
