@@ -1,5 +1,6 @@
-#include <stdio.h>
-int main() {
+#include<stdio.h>
+int main()
+{
     char str[1000], ch;
     int count = 0;
 
