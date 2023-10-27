@@ -1,5 +1,6 @@
-#include <stdio.h>
-int main() {
+#include<stdio.h>
+int main() 
+{
     char s[] = "Programming is fun";
     int i;
 
