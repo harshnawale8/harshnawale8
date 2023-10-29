@@ -1,5 +1,6 @@
-#include <stdio.h>
-struct TIME {
+#include<stdio.h>
+struct TIME
+{
    int seconds;
    int minutes;
    int hours;
@@ -9,7 +10,8 @@ void differenceBetweenTimePeriod(struct TIME t1,
                                  struct TIME t2,
                                  struct TIME *diff);
 
-int main() {
+int main()
+{
    struct TIME startTime, stopTime, diff;
 
    printf("Enter the start time. \n");
@@ -24,7 +26,6 @@ int main() {
          &stopTime.minutes,
          &stopTime.seconds);
 
-   // Difference between start and stop time
    differenceBetweenTimePeriod(startTime, stopTime, &diff);
    printf("\nTime Difference: %d:%d:%d - ", startTime.hours,
           startTime.minutes,
@@ -38,16 +39,17 @@ int main() {
    return 0;
 }
 
-// Computes difference between time periods
 void differenceBetweenTimePeriod(struct TIME start,
                                  struct TIME stop,
-                                 struct TIME *diff) {
+                                 struct TIME *diff)
+   {
    while (stop.seconds > start.seconds) {
       --start.minutes;
       start.seconds += 60;
    }
    diff->seconds = start.seconds - stop.seconds;
-   while (stop.minutes > start.minutes) {
+   while (stop.minutes > start.minutes)
+   {
       --start.hours;
       start.minutes += 60;
    }
