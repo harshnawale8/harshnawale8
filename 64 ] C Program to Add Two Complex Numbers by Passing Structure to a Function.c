@@ -1,12 +1,14 @@
-#include <stdio.h>
-typedef struct complex {
+#include<stdio.h>
+typedef struct complex
+{
     float real;
     float imag;
 } complex;
 
 complex add(complex n1, complex n2);
 
-int main() {
+int main()
+{
     complex n1, n2, result;
 
     printf("For 1st complex number \n");
