@@ -1,17 +1,12 @@
 #include <stdio.h>
-#include <stdlib.h>
-
-int main() {
+int main()
+{
     char sentence[1000];
-
-    // creating file pointer to work with files
     FILE *fptr;
 
-    // opening file in writing mode
     fptr = fopen("program.txt", "w");
-
-    // exiting program 
-    if (fptr == NULL) {
+    if (fptr == NULL) 
+    {
         printf("Error!");
         exit(1);
     }
