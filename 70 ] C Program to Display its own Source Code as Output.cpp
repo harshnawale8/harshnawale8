@@ -1,16 +1,16 @@
-#include <stdio.h>
-int main() {
+#include<stdio.h>
+int main()
+{
     FILE *fp;
     int c;
-   
-    // open the current input file
-    fp = fopen(__FILE__,"r");
+       fp = fopen(__FILE__,"r");
 
-    do {
-         c = getc(fp);   // read character 
-         putchar(c);     // display character
+    do
+    {
+         c = getc(fp); 
+         putchar(c);
     }
-    while(c != EOF);  // loop until the end of file is reached
+    while(c != EOF);
     
     fclose(fp);
     return 0;
